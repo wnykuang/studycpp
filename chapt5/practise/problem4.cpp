@@ -1,15 +1,14 @@
 #include <iostream>
 
 int main(){
-    using namespace std;
-    int sum = 0;
-    int in;
-    cout << "Please input a interge to compute the cummulative sum, if you are willing to stop please input the 0" << endl;
+    int year = 0;
+    float Cleo = 100;
+    float Daphne = 100; 
     do{
-        cin >> in;
-        sum += in;
-    }while (in != 0);
-
-    cout << "The sum of cummulative integers is: " << sum << endl;
+        Cleo += 10;
+        Daphne *= 1.05;
+        ++year;
+    }while(Cleo > Daphne);
+    std::cout << "After " << year << " years. Daphne has more money than Cleo, Daphne has: " << Daphne << " and Cleo has " << Cleo << "." << std::endl;
     return 0;
 }
